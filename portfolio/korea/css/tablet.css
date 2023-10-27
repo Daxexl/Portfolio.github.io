@@ -1,0 +1,59 @@
+.pc {display: none;}
+.tablet {display: block !important;}
+.mo {display: none;}
+
+
+
+header h1 {float: left; margin-top: 15px; width:26%; height: auto; position: absolute;; }
+header .gnb {width: 96%;  margin-right: 0; }
+header .gnb > li {font-size: 18px;}
+
+header .gnb li .lnb li {font-size: 18px;}
+
+
+#visual .text_box span:nth-child(1) {font-size: 30px; margin-bottom: 0;}
+#visual .text_box span:nth-child(2) {font-size: 70px; }
+
+
+
+#section1 {height: auto;}
+#section1 .art li h3 { font-size: 22px;} 
+
+
+
+
+#section2 h2 {margin-bottom: 114px; font-size: 40px;}
+#section2 .show li h3 { font-size: 18px; } 
+#section2 .show li p {font-weight: 600; font-size: 20px; word-break: keep-all; } 
+
+
+#section3 {background: url('../images/tablit_02.jpg') no-repeat center;}
+#section3 .news li h3 {font-size: 22px; } 
+#section3 .news li p {word-break: keep-all;} 
+#section3 .news li:nth-child(3) { top: 470px;} 
+
+
+#section4 h2 {font-size: 40px;}
+#section4 .video_box li em {font-size: 28px; word-break: keep-all;}
+#section4 .video_box li.text {width: 36%;}
+#section4 .video_box li.text p {font-size: 2vw; line-height: 1.8; word-break: keep-all;}
+
+
+
+#section5 h2 {font-size: 40px;}
+
+#floating_menu {display: none;}
+
+footer .footer_box .address p {font-size: 16px;}
+footer .footer_box .info li {font-size: 16px;}
+
+footer h1 {width: 280px;}
+
+/* 
+#section1 .art li {width: 45%; } */
+/* @media screen and (max-width:1140px) {
+    header .gnb {width: 60%;}
+    header .gnb > li {font-size:18px; width: auto;}
+    header .gnb > li > a {padding: 1.1vw;}
+    
+} */

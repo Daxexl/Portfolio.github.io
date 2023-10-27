@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url('reset.css');
+@import url('fonts.css');
+
+
+body {width: 1920px; height: auto; margin: 0 auto;}
+.centerbox {width: 1200px; height: auto; margin: 0 auto;}
+header {width: 1920px; height: 194px; background: #f9f9f9; position: relative; font-family:'SUIT';font-weight: 500;}
+
+header .bg {width: 100%; height: 50px; background: #614bc3; position: absolute; top: 0;}
+
+
+
+header .site {float: left; width: 219px; height: 50px; 
+               font-size: 18px; display: flex; align-items: center; gap: 34px;}
+header .site a {color: #fff; }
+header .site i.fa-solid.fa-arrow-right {font-size: 18px; color: #fff; transform: rotate(-45deg);}
+
+
+header .site li:hover a {color: #333; font-weight: 500; transition: .3s;}
+header .site li:hover i.fa-solid.fa-arrow-right {color: #222;}
+
+
+
+header .login {float: right; width: 236px; height: 50px; margin-right: 5px;
+               font-size: 18px; display: flex; align-items: center; gap: 30px;}
+
+header .login a {color: #fff; position: relative; display: block;}
+header .login a.one:before {content: ""; position: absolute; width: 1px; height: 18px; background-color: #fff; left: 61px; top: 3px;} 
+header .login a.two:before {content: ""; position: absolute; width: 1px; height: 18px; background-color: #fff; left: 79px; top: 3px;}
+
+header .login li:hover a {color: #333; font-weight: 500; transition: .3s;}
+
+
+
+
+header h1 {width: 205px; height: 54px; top: 50px; float: left; position: absolute; top: 90px;}
+
+
+header .centerbox {position: relative;}
+
+
+header .gnb {position: absolute; top: 95px;  width: 920px; height: 46px; position: absolute; right: 0;
+            float: right; display: flex; justify-content: center; align-items: center; gap: 80px;}
+
+header .gnb li {float: left; font-size: 22px; font-weight: 500; height: 100%; line-height: 46px; width: 165px; text-align: center; }
+header .gnb li a {color: #614bc3; display: block;}
+
+header .gnb > li:hover {background: #614bc3; border-radius: 10px; transition: .3s;}
+header .gnb > li:hover a {color: #fff; transition: .3s;}
+
+
+
+
+#section {width: 100%; height: auto;}
+
+#section .section1 {width: 100%; height: 380px; }
+#section .section1 h2 { font-family: 'Cafe24Ssurround'; margin: 26px auto 0 auto;
+                       width: 258px; height: 37px; font-size: 32px; color: #33bbc5;}
+
+#section .section1 .edu {display: flex; justify-content: center; align-items: center;
+                         width: 100%; height: 197px;  margin: 60px auto; gap: 25px;font-family: 'SUIT'; }
+
+#section .section1 .edu li {background:#a0dde2; height: 197px; width: 172px; border-radius: 30px; cursor: pointer;}  
+
+#section .section1 .edu li figure {width: 99px; height: 89px; margin:42px auto 0  auto; }
+#section .section1 .edu li figure img {width: 100%;}
+
+#section .section1 .edu p {float: left; color: #fff; font-weight: 500; width: 100%; height: 47px; 
+                              text-align: left; text-indent: 30px; font-size: 22px; margin-top: 22px;}
+
+#section .section1 .edu p a {color: #fff; font-size: 30px; display: inline-block; 
+                            line-height: 30px; float: right; margin-right: 15px;}
+
+#section .section1 .edu p:hover {color: #33bbc5; font-weight: 500; transition: .3s;}
+#section .section1 .edu p:hover a{color: #33bbc5; font-weight: 500; transition: .3s;}
+
+
+
+#section .section2 {width: 100%; height: 710px; background: #f0f0f0; padding-bottom: 30px;}
+
+#section .section2 h2 {font-family: 'Cafe24Ssurround'; width: 320px; height: 37px; font-size: 32px; color: #614bc3;
+                      margin: 0 auto; padding-top: 26px; box-sizing: border-box;}
+
+#section .section2 .circle {width: 100%; height: 528px; margin: 120px auto 56px auto;  font-family:'SUIT';}
+
+#section .section2 .circle li {background: rgba(197, 190, 226, 8); width: 444px; height: 444px; border-radius: 50%; 
+                              display: inline-block; margin: 50px -25px; cursor: pointer;}
+
+#section .section2 .circle li.center {background: rgba(140, 124, 248, 21); width: 444px; height: 444px; border-radius: 50%; 
+                                     position: relative; top: -70px; opacity: 0.6;}
+                                   
+#section .section2 .circle li h3 {color: #fff; font-size: 46px; font-weight: 700; text-align: center; margin-top: 128px;}
+
+
+#section .section2 .circle li p {font-weight: 400; text-align: center; margin-top: 28px; font-size: 24px; line-height: 30px; color: #fff;}
+
+
+
+
+#section .section3 {width: 100%; height: 652px; background: url('../images/sec3_bg_02.png'); font-family:'SUIT';}
+
+#section .section3 h2 {color: #fff; font-size: 45px; font-weight: 600; padding-top: 60px; box-sizing: border-box;}
+
+#section .section3 span {color: #fff; font-size: 70px; font-weight: 600; display: block; margin-top: 62px;}   
+
+#section .section3 .link {float: left; margin-top: 92px; width: 580px; height: 208px; }
+
+#section .section3 .link li { width: 260px; height: 80px;  float: left; margin-right: 24px;
+                            margin-bottom: 48px; font-size: 26px; text-align: center; line-height: 80px; font-weight: 500;}
+#section .section3 .link li a {color: #fff; display: block; width: 100%; border-radius: 40px;  border: 2px solid #fff; }
+
+
+#section .section3 .link li:hover a {background: #fff; color: #333; transition: .3s;  }
+
+
+#section .section4 {width: 100%; height: 662px; background: #f0f0f0;}
+
+#section .section4 h2 {font-family: 'Cafe24Ssurround'; width: 420px; height: 37px; font-size: 32px; color: #28cd94;
+                    margin: 0 auto; padding-top: 26px; box-sizing: border-box;}
+
+#section .section4 .review {width: 100%; height: 464px;margin-top: 96px; 
+                            display: flex; justify-content: center; align-items: center; gap: 36px;}
+
+#section .section4 .review li {width: 381px; height: 464px; font-family: 'SUIT';}
+
+#section .section4 .review li figure {width: 381px; height: 306px;  border-radius: 25px; cursor: pointer;}
+
+#section .section4 .review li figure img {width: 100%; height: 100%; border-radius: 25px;}
+
+#section .section4 .review li p {margin-top: 10px; width: 100%; height: 150px; text-align: center;}
+
+#section .section4 .review li strong {display: block; font-weight: 500; font-size: 21px;}
+#section .section4 .review li em {font-style: normal; font-weight: 400; color: #555; font-size: 16px; display: block; margin-top: 25px;}
+
+#section .section4 .review li p span {display: block; text-align: right; margin-top: 25px;}
+
+#section .section4 .review li figure:hover img{opacity: 0.8; transition: .3s;}
+
+
+
+
+
+#section .section5 {width: 100%; height: 650px;}
+#section .section5 h2 {font-family: 'Cafe24Ssurround'; width: 264px; height: 37px; font-size: 32px; color: #81cca1;
+                    margin: 0 auto; padding-top: 26px; box-sizing: border-box;}
+#section .section5 .book {width: 100%; height: 450px; margin-top: 100px; display: flex; justify-content: center; gap: 108px; font-family: 'SUIT';}
+
+#section .section5 .book li {width: 100%; height: 450px;}
+#section .section5 .book figure {width: 326px; height: 344px; cursor: pointer;}
+#section .section5 .book figure img {width: 100%; height: 100%;}
+
+#section .section5 .book figure:hover img {opacity: 0.8; transition: .3s;}
+
+
+#section .section5 .book p {text-align: center; margin-top: 10px; font-size: 22px; font-weight: 600;}
+#section .section5 .book span {text-align: center; display: block; margin-top: 26px; font-size: 16px; font-weight: 500; color: #555;}
+
+#section .section6 {width: 100%; height: 618px; background: #f9f9f9;}
+
+#section .section6 h2 {font-family: 'Cafe24Ssurround'; width: 264px; height: 37px; font-size: 32px; color: #4cd1dc;
+                      margin: 0 auto; padding-top: 26px; box-sizing: border-box; }
+
+#section .section6 h2 a {font-size: 37px; color: #4cd1dc; display: inline-block; margin-right: 0; line-height: 37px;}
+
+#section .section6 .notice {width: 1136px; height: 444px; display: flex; flex-direction: column; margin: 70px auto 0 auto;
+                              align-items: center; justify-content: center; gap: 60px;font-family: 'SUIT'; }
+
+#section .section6 .notice li {width: 100%; height: 110px; background: #e7f5f6; border-radius: 25px; cursor: pointer;}
+
+#section .section6 .notice li strong {display: inline-block; font-size: 24px; margin-left: 76px; width: 96px; height: 30px; line-height: 110px;
+                                   font-weight: 500; }
+#section .section6 .notice li.no strong {color: red;}
+#section .section6 .notice li.bumo strong {color: green;}
+#section .section6 .notice li em {font-style: normal; display: inline-block; width: 807px; font-size: 22px;
+                                 text-align: center; height: 30px; line-height: 110px; color: #555; font-weight: 400;}
+
+#section .section6 .notice li p {display: inline-block; width: 126px; height: 30px; line-height: 110px; color: #888; font-size: 22px; font-weight: 300;}
+
+
+#section .section6 .notice li:hover {background: #f0f0f0; transition: .3s;}
+
+
+
+footer {width: 100%; height: 362px; background: #555; font-family: 'SUIT';}
+
+footer .sitemap {width: 100%;  height: 57px; float: left; margin-top: 62px; display: flex; justify-content: center;
+                 align-items: center; border-bottom: 1px solid #ccc;}
+
+footer .sitemap li {width: 300px; height: 28px; font-size: 24px; text-align: center; border-right: 1px solid #fff;}
+footer .sitemap li:last-child {border-right: none;}
+footer .sitemap li a {color: #fff;}
+
+footer .address {float: left; width: 808px; height: 116px; margin-top: 30px;
+                font-size: 24px; color: #fff; line-height: 30px;}
+footer .call {float: right; margin-top: 140px; width: 185px; height: 46px;}
+
+footer .call i {color: #fff; font-size: 30px; line-height: 46px; cursor: pointer;}
+footer .call a {font-size: 26px; font-weight: 500; color: #fff; display: inline-block; text-align: right; margin-right: 0; margin-left:15px;}
+
+
+footer .sitemap li:hover a{color: #222; font-weight: 500; transition: .3s;}
+
+footer .call:hover i {animation: ani 1s infinite;}
+
+@keyframes ani {
+    0%{transform: rotate(-25deg);}
+    50% {transform: rotate(25deg);}
+    100%{transform: rotate(-25deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

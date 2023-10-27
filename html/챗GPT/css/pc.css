@@ -1,0 +1,442 @@
+.centerbox {max-width: 1519px; margin: 0 auto; }
+
+body {background: #000; }
+
+
+header {width: 1519px; height: 200px; border-bottom: 1px solid #cecece; margin: auto; position: relative;}
+header h1 {width: 264px; height: 86px; float: left; margin-left: 620px; padding-top: 50px;}
+header h1 img {width: 100%;}
+header .language_box {float: right; width: 63px; height: 28px; margin-top: 26px;}
+header .language_box a {display: block; float: left; transition: .3s;}
+
+header .language_box a:hover {animation: hook 1s forwards;}
+
+@keyframes hook {
+
+    0% {margin-top: 0;}
+    50% {margin-top: -15px;}
+    100% {margin-top: 0;}
+
+}
+
+header .language_box a:nth-child(1) {margin-right: 12px; margin-top: 5px;}
+
+
+header .menu_box {width: 30px; height: 1px; background: #fff; top: 26px; position: absolute; cursor: pointer;}
+header .menu_box::before {content: ""; width: 18px; height: 1px; background: #fff; top: 8px; position: absolute;cursor: pointer;}
+header .menu_box:after {content: ""; width: 30px; height: 1px; background: #fff; top: 16px; position: absolute; cursor: pointer;}
+
+
+/* header .gnb {float: left; width: 100%; }
+
+header .gnb li {float: left; width: 125px; height: 84px; text-align: center; line-height: 84px; position: relative;
+                font-size: 28px; font-weight: 300; margin-right: 212px; font-family: 'NanumSquareNeo';}
+header .gnb li:nth-child(1) {margin-left: 19px;}
+header .gnb li:last-child {margin-right: 0px;}
+
+header .gnb li a {color: #fff;} */
+
+
+
+
+
+
+
+
+
+/* header .gnb .lnb {position: absolute;  z-index: 10; left: -15px; text-align: center;}
+header .gnb .lnb li {font-size: 20px; width: 120px; height: 84px; width: 125px; height: 84px; } 
+header .gnb .lnb li a {} */
+
+/* .lnb_bg {background: rgba(rgb(243, 243, 243, 0.7), green, blue, alpha); 
+        position: relative; width: 1519px; height: 250px; margin: 0 auto; z-index: 20;} */
+
+
+
+
+.sidebox {width: 100%; height: 100vh; position: fixed; top:0; right: 0; perspective: 800px; z-index: -1;}
+.sidebox .bumo {width: 100%; height: 100%; transform-origin: right; transform: rotateY(-180deg);transition: .5s; background: rgba(38,57,79,0.97); }
+.sidebox.on {z-index: 77;}
+.sidebox.on .bumo {transform: rotateY(0deg); }
+.sidebox .sidemenu {width: 60%; height: 700px; position: absolute; left: 50%; 
+                    transform: translateX(-50%); top: 100px; }
+.sidebox .sidemenu .btn_close {width: 80px; height: 80px; cursor: pointer; margin: 0 auto; 
+                                display: block; position: relative;}
+.sidebox .sidemenu .btn_close::before,
+.sidebox .sidemenu .btn_close::after {content: ""; position: absolute; width: 100%; height: 3px; background: #fff; top: 37px;}     
+
+.sidebox .sidemenu .btn_close::before {transform: rotate(45deg);}
+.sidebox .sidemenu .btn_close::after {transform: rotate(-45deg); }
+
+.sidebox .sidemenu nav {}
+.sidebox .sidemenu nav .gnb {display: flex; text-align: center;}
+.sidebox .sidemenu nav .gnb li {flex-grow: 1; height: 78px; 
+                                    line-height: 78px; font-size: 26px; margin-top: 10px;} 
+.sidebox .sidemenu nav .gnb > li > a {display: block; color: var(--pointColor1);}
+
+
+.sidebox .sidemenu .gnb li .lnb li {font-size: 18px; height: 70px; line-height: 70px; }
+.sidebox .sidemenu .gnb li .lnb li a {display: block; color: #fff;}
+
+
+
+
+.sidebox .sidemenu .member_box {margin-top: 550px; display: flex; justify-content: center; gap: 5px;}
+
+.sidebox .sidemenu .member_box a {width: 200px; height: 60px; line-height: 60px; 
+                                background: rgba(255,255,255,0.8); transition: 0.2s; text-align: center;}
+
+.sidebox .sidemenu .member_box a:hover {background: #fff;}
+
+
+
+
+#visual {width: 100%; height: 1165px; position: relative; }
+#visual .chat {float: left; font-size: 253px; color: #fff; width: 761px; height: 300px;
+    font-family: 'SBAggro';line-height: 300px; margin-top: 98px; font-weight: 700;}
+#visual .circle {float: right; }
+#visual .text {width: 744px; height: 611px; background: url('../images/v-text_03.jpg') left no-repeat; float: left;}
+#visual .GPT {font-size:342px; color: #6f36f7; width: 829px; height: 343px; font-family: 'SBAggro';
+            font-size: 350px; line-height: 343px; font-weight: 700; margin-top:-470px; float: right;}
+
+
+#section_box {background: #18191b; margin-top: 112px;}
+
+
+/* 그리드 파악하고 가기 */
+/* #section1 {height: 1772px; width: 100%; margin-top: 104px; background: red;}
+/* 그리드 콜룸은 가로길이 / 그리드 로우는 세로 길이*/
+/* #section1 .cont {display: grid; grid-template-columns: 1fr 2fr 1fr 1fr 1fr; grid-template-rows:  150px 150px 150px;
+                background: #fff; width: 1200px; grid-gap:5px; margin: 0 auto;height: 1500px;}
+
+#section1 li {background: red; display: flex; justify-content: center; align-items: center; flex-direction: column; 
+              border: 1px solid black;} */ */
+
+#section_box .section1 {width: 100%; height: 990px;}
+.section1 h2 {width: 545px; height: 75px; margin:0 auto; font-size: 54px; padding-top: 99px;
+             line-height: 75px; color: #fff; font-weight: 300; font-family: 'NanumSquareNeo';}
+.section1 h2 span.op {color: #6f36f7; font-weight: 700;}
+.section1 h2 span.ai {color: #966aff; font-weight: 700;}
+
+.section1 hr {width: 56px; height: 3px; margin: 44px auto 0 710px; border: none; background: #966aff;}
+
+.section1 strong {font-size: 42px; width: 100%; height: 122px; text-align: center; color: #fff; font-family: 'NanumSquareNeo';
+                  line-height: 56px; margin-top: 41px; display: block;
+                  font-family: 'NanumSquareNeo'; font-weight: 800;}
+
+.section1 em {font-style: normal; font-size: 24px; line-height: 42px; width: 100%; height: 122px; font-family: 'NanumSquareNeo';
+             display: block; margin-top: 96px; text-align: center; color: #ddd; display: block; margin-bottom: 170px;}
+
+.section1 .count{display: flex; justify-content: center; align-items: center; font-family: 'NanumSquareNeo'; gap: 123px;}
+.section1 .count li {width: 395px; height: 130px; text-align: center;}
+.section1 .count li span {text-align: center;}
+.section1 .count li span.num {text-align: center; display: block; font-size: 54px; color: #fff; font-weight: 800; }
+.section1 .count li span.title {font-size: 16px; color: #ddd; font-weight: 400;  
+                                margin-top: 50px; display: block;}
+
+
+.section2 {height: 1770px; width: 100%; margin-top: 130px; background: #e6e6e6; font-family: 'NanumSquareNeo';}
+
+
+.section2 h2 {width: 545px; height: 75px; font-size: 54px; padding-top: 99px; margin-left: 526px;
+    line-height: 75px; color: #fff; font-weight: 300; }
+.section2 h2 span.use {color: #6f36f7; font-weight: 700;}
+.section2 h2 span.chat {color: #966aff; font-weight: 700;}
+
+.section2 hr {width: 56px; height: 3px; margin: 44px auto 0 710px; border: none; background: #966aff; margin-bottom: 36px;}
+
+.section2 em {font-style: normal; font-size: 28px; color:#18191b; width: 100%; display: block; text-align: center;}
+
+.section2 .cont {width: 100%; display: flex;  gap: 146px 140px; padding-top: 200px; box-sizing: border-box; flex-wrap: wrap;}
+
+.section2 .cont li {background: #18191b; width: 680px; height: 441px; border-radius: 50px; 
+                    text-align: center; flex-grow: 1; position: relative; 
+                    opacity: 0; transition: .3s; transform: translateY(300px)
+                }
+
+.section2 .cont li.on {opacity: 1; transform: translateY(0);}
+
+.section2 .cont li strong {font-size: 60px; color: #fff; margin-top: 38px; margin-bottom: 30px; font-weight: 800; display: block;}
+.section2 .cont li em {font-style: normal; font-size: 24px; text-align: center; line-height: 36px; color: #6f36f7; display: block;
+                      margin-bottom: 19px;}
+.section2 .cont li p { text-align: center; line-height: 30px; font-size: 20px; color: #fff;}
+
+.section2 .cont li:nth-child(2n) {top: 150px;}
+
+.section3 {width: 100%; height: 1332px; font-family: 'NanumSquareNeo';}
+
+.section3 h2 {width: 440px; height: 95px; font-size: 54px; padding-top: 99px; margin-left: 526px;
+                line-height: 75px; color: #fff; font-weight: 300;}
+.section3 h2 span.about {color: #6f36f7; font-weight: 700;}
+.section3 h2 span.open {color: #966aff; font-weight: 700;}
+.section3 hr {width: 56px; height: 3px; margin: 33px auto 0 710px; border: none; background: #966aff; }
+
+.section3 .cont_box {width: 100%; height: 783px;}
+
+.section3 .cont_box .img_box {float: left; width: 825px; height: 775px; margin-top: 50px; position: relative;}
+
+
+.section3 .cont_box .img_box li.circle {width: 690px; height: 690px; border-radius: 50%; 
+                                        background: #1f2022; position: absolute; top: 156px; left: 165px;}
+
+.section3 .cont_box .img_box li.img{width: 690px; height: 690px; border-radius: 50%; position: absolute; top: 47px; left: 0; 
+                                    background: url(
+                                    '../images/s3_img.jpg');
+                                    background-size: 100%; background-position: center;
+                                   background-repeat: no-repeat; }
+
+
+.section3 .cont_box .img_box:hover {margin-top: -15px; transition: .3s;}
+.section3 .cont_box .img_box:hover li.circle {background: #fff;}
+
+
+
+.section3 .cont_box .ment {width: 547px; height: 748px; float: right; margin-top: 50px;}
+
+.section3 .cont_box .ment span {display: block; float: right; text-align: right; font-size: 16px; 
+                                color: #ddd; width: 103px; height: 16px; }
+.section3 .cont_box .ment strong {display: block; text-align: right; color: #fff; font-size: 42px; 
+                               width: 430px; height: 56px; float: right; margin-top: 60px;}
+.section3 .cont_box .ment p {display: block; float: right; text-align: right; color: #fff; font-size: 24px; line-height: 42px; margin-top: 98px;}
+.section3 .cont_box .ment a {display: block; float: right; text-align: center; color: #fff; border: 2px solid #fff; 
+                            border-radius: 50px; margin-top: 155px; width: 318px; height: 120px; line-height: 120px; font-size: 30px; font-weight: 800;}
+
+
+
+.section3 .ment a:hover {color: #222; background: #eee;}
+
+
+.section4 {width: 100%; height: 261px; background: #000; font-family: 'NanumSquareNeo';}
+
+.section4 .centerbox {position: relative; font-family: 'NanumSquareNeo';}
+.section4 a.btn_start{width: 410px; height: 118px; background: #6f36f7; display: inline-block; color: #fff; line-height: 118px; font-weight: 800;
+                    border-radius: 50px; position: relative; top: 68px; left: 563px; text-align: center; font-size: 34px; 
+                    font-family: 'NanumSquareNeo'; }
+
+.section4 a.btn_start:hover {border: 2px solid #fff; color: #6f36f7; background: #000; transition: .3s;}
+
+              
+                    
+                    
+                    
+                 
+
+                    
+
+
+
+footer {width: 100%; background: #000; height: 430px; font-family: 'NanumSquareNeo';}
+footer hr {width: 100%; height: 1px; background: #fff;}
+
+footer .logo_box {float: left; width: 256px; height: 202px; margin-top: 37px;}
+footer .logo_box a {display: block; float: left;}
+footer .logo_box p {float: left; font-size: 16px; line-height: 28px; text-align: left;
+                    color: #aaa; margin-top: 37px;}
+
+
+footer .site_box { width: 950px; height: 224px; margin-top: 37px; display: flex; gap: 127px; margin-left: 572px; }
+
+footer .site_box li {width: 145px; height: 220px; }
+
+footer .site_box strong {font-weight: 600; color: #fff; font-size: 16px;}
+footer .site_box p { line-height: 28px; font-size: 16px; color: #ddd; margin-top: 28px;width: 150px; }
+footer .site_box p a {color: #ddd; display: block;} 
+
+footer .link_box {float: right; width: 215px; height: 33px; display: flex; gap: 27px; flex-wrap: wrap; margin-top: 97px;}
+footer .link_box li {width: 33px; height: 33px; }
+
+
+footer .site_box p a:hover {transition: .3s; font-size: 17px; color: #6f36f7;}
+footer .site_box p a.midi {width: 100px;}
+                
+
+
+/* 자주 묻는 질문 페이지 */
+
+header.sub {border: none;}
+
+header .gnb {float: left; width: 100%; border-bottom: 1px solid #ccc; margin-top: -20px; font-weight: 400;}
+
+header .gnb li {float: left; width: 125px; height: 84px; text-align: center; line-height: 84px; position: relative;
+                font-size: 28px; font-weight: 300; margin-right: 212px; font-family: 'NanumSquareNeo';}
+header .gnb li:nth-child(1) {margin-left: 19px;}
+header .gnb li:last-child {margin-right: 0; }
+header .gnb li:last-child a {color: #966aff; font-weight: 500; }
+
+header .gnb li a {color: #fff;}
+
+
+#section_subbox {width: 100%; background: #18191b; height: 1818px; font-family: 'NanumSquareNeo';;}
+
+
+
+#section_subbox .nav {width: 100%; height: 89px; border-bottom: 1px solid #ccc;}
+
+#section_subbox .nav li {float: left; line-height: 89px; width: 114px; font-size: 20px;}
+#section_subbox .nav li a {display: block; color: #888;}
+
+#section_subbox .nav li.two {padding-right: 10px;}
+#section_subbox .nav li.last a {color: #7d59d3;}
+
+#section_subbox h2 {width: 292px; height: 78px; line-height: 58px; color: #fff; font-weight: 700; font-size: 54px;
+                    margin: 0 auto; text-align: center; border-bottom: 3px solid #966aff; margin-top: 70px;}
+
+
+
+#section_subbox ul.text {width: 620px; height: 46px; margin: 0 0 0 460px ; padding-top: 46px; text-align: center; position: relative;}
+#section_subbox ul.text li {float: left; width: 200px; line-height: 46px; text-align: center; font-size: 26px; font-weight: 700; position: relative;}
+#section_subbox ul.text li a {color: #fff; display: block;}
+
+#section_subbox ul.text li::before {content: ""; position: absolute; left: 25px; top: 18px; width: 12px; height: 12px; background: #555; border-radius: 50%;}
+#section_subbox ul.text li:first-child:before {background: #966aff; left: -10px;} 
+
+
+
+#section_subbox .cont {width: 100%; height: 1046px; margin-top: 140px;  
+                        display: flex; flex-wrap: wrap; gap: 134px; box-sizing: border-box;
+                         }
+
+#section_subbox .cont li {background: #f5f5f5; border-radius: 40px; width: 690px; height: 376px; flex-grow: 1; position: relative;
+                        }
+                         
+
+#section_subbox .cont li.bora{top: 140px; background: #966aff;}
+
+
+
+
+
+
+
+
+
+
+
+
+#section_subbox .cont li figure {width: 266px; height: 300px; margin-top: 22px; margin-left: 22px; float: left;}
+#section_subbox .cont li.bora figure img {margin-left: 22px;}
+
+#section_subbox .cont li p {margin-top: 18px; width: 242px; height: 50px; line-height: 50px; font-weight: bold;
+                            border-radius: 80px; text-align: center; border: 3px solid #000;}
+
+#section_subbox .cont li p a {color: #222;}
+
+
+
+#section_subbox .cont li .text {width: 340px; height: 295px; margin-top: 54px; float: left; margin-left: 36px;}
+#section_subbox .cont li .text strong {font-size: 26px; font-weight: bold; color: #966aff;}
+#section_subbox .cont li .text em {display: block; font-style: normal; margin-top: 50px; line-height: 34px; font-size: 22px; font-weight: bold;}
+#section_subbox .cont li .text em span {color: #444; font-size: 16px; font-style: normal; font-weight: bold;}
+#section_subbox .cont li .text span.date {float: left; margin-left: 242px; margin-top: 60px;
+                                         display: block; font-size: 16px; color: #777; font-weight: bold;}
+
+
+#section_subbox .cont li.bora p {margin-top: 18px; width: 242px; height: 50px; line-height: 50px; font-weight: bold;
+                                border-radius: 80px; text-align: center; border: 3px solid #fff;}
+
+#section_subbox .cont li.bora p a {color: #fff;}
+
+#section_subbox .cont li.bora .text strong {font-size: 26px; font-weight: bold; color: #fff;}
+#section_subbox .cont li .text em {display: block; font-style: normal; margin-top: 50px; line-height: 34px; font-size: 22px; font-weight: bold;}
+#section_subbox .cont li .text em span {color: #444; font-size: 16px; font-style: normal; font-weight: bold;}
+#section_subbox .cont li.bora .text span.date {float: left; margin-left: 242px; margin-top: 60px;
+                                               display: block; font-size: 16px; color: #333; font-weight: bold;} 
+
+
+
+#section_subbox .underpage {display: flex; gap: 110px; margin: 0 auto; justify-content: center;
+                            margin-top: 160px;  cursor: pointer; text-align: center;}
+#section_subbox .underpage li {width: 52px; height: 52px; line-height: 52px; }
+
+#section_subbox .underpage li a {color: #fff; display: block; font-weight: bold;}
+
+#section_subbox .underpage li:hover {border-radius: 50%; background: #6f36f7;}
+#section_subbox .underpage li:hover a {color: #222;}
+
+
+
+
+
+
+
+
+/* 1:1문의 페이지
+
+#section_subbox2 {height: 1785px; width: 100%; background: #18191b; font-family: 'NanumSquareNeo';;}
+
+#section_subbox2 .nav {width: 100%; height: 89px; border-bottom: 1px solid #ccc;}
+
+#section_subbox2 .nav li {float: left; line-height: 89px; width: 114px; font-size: 20px;}
+#section_subbox2 .nav li a {display: block; color: #888;}
+
+#section_subbox2 .nav li.two {padding-right: 10px;}
+#section_subbox2 .nav li.last a {color: #7d59d3;}
+
+#section_subbox2 h2 {width: 292px; height: 78px; line-height: 58px; color: #fff; font-weight: 700; font-size: 54px;
+                    margin: 0 auto; text-align: center; border-bottom: 3px solid #966aff; margin-top: 70px;}
+
+
+
+#section_subbox2 ul.text {width: 620px; height: 46px; margin: 0 0 0 460px ; padding-top: 46px; text-align: center; position: relative;}
+#section_subbox2 ul.text li {float: left; width: 200px; line-height: 46px; text-align: center; font-size: 26px; font-weight: 700; position: relative;}
+#section_subbox2 ul.text li a {color: #fff; display: block;}
+
+#section_subbox2 ul.text::before {content: ""; position: absolute; left: -10px; top: 63px; width: 12px; height: 12px; background: #966aff; border-radius: 50%;}
+
+#section_subbox2 ul.text li::after {content: ""; position: absolute; left: 5px; top: 7px; width: 2px; height: 30px; background: #966aff;}
+
+#section_subbox2 ul.text li.last-child::after {width: 0;} 
+
+
+
+#section_subbox2 .title {width: 396px; height: 42px; line-height: 42px; font-size: 42px; color: #fff; 
+                        font-weight: 800; text-align: center; margin: 0 auto; padding-top: 82px;}
+
+#section_subbox2 .title span {color: #6f36f7;}
+#section_subbox2 .title span.two {color: #966aff;}
+
+
+
+
+#section_subbox2 .con {width: 1282px; height: 1006px; margin: 0 auto; background: #fff;
+                     margin-top: 79px; border-radius: 20px; }
+
+
+#section_subbox2 .con h2 {width: 1010px; height: 96px; border-bottom: 2px solid #555; line-height: 96px; font-size: 24px; color: #222;} */
+
+@media screen and(max-width: 1280px){
+    body {border: 10px solid red;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
